@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Client Emails" max_length="40" name="x_exeg2_estate_rep_client_emails" type="collection">
+        <element label="CC" max_length="100" name="cc" reference="sys_user" reference_key="email" type="glide_list"/>
+        <element label="Email" max_length="4000" name="email" reference="sys_user" reference_key="email" reference_qual="emailISNOTEMPTY^EQ" reference_qual_condition="emailISNOTEMPTY^EQ" type="glide_list"/>
+        <element label="Name" max_length="40" name="name" reference="core_company" type="reference"/>
+        <element label="Ticket" max_length="40" name="ticket" type="string"/>
+    </element>
+</database>

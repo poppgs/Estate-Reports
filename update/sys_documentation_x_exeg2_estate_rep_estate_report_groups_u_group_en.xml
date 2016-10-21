@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_group" label="group" language="en" table="x_exeg2_estate_rep_estate_report_groups">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_group</element>
+            <help/>
+            <hint/>
+            <label>group</label>
+            <language>en</language>
+            <name>x_exeg2_estate_rep_estate_report_groups</name>
+            <plural>groups</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>gpopp</sys_created_by>
+            <sys_created_on>2016-10-07 13:51:31</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>a98260c64f52a2008ea450ee0310c773</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>group</sys_name>
+            <sys_package display_value="Estate Reports" source="x_exeg2_estate_rep">35c1467a1386e640e93cb16f3244b0b5</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Estate Reports">35c1467a1386e640e93cb16f3244b0b5</sys_scope>
+            <sys_update_name>sys_documentation_x_exeg2_estate_rep_estate_report_groups_u_group_en</sys_update_name>
+            <sys_updated_by>gpopp</sys_updated_by>
+            <sys_updated_on>2016-10-07 13:51:31</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

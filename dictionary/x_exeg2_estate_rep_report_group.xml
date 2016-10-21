@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Report Group" max_length="40" name="x_exeg2_estate_rep_report_group" type="collection">
+        <element label="Appliance" max_length="32" name="appliance" reference="x_exeg2_cmdb_appliance" type="reference"/>
+        <element label="Company" max_length="32" name="company" reference="core_company" type="reference"/>
+        <element label="Group" max_length="40" name="group" type="string"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <index name="index">
+            <element name="appliance"/>
+        </index>
+        <index name="index2">
+            <element name="company"/>
+        </index>
+    </element>
+</database>

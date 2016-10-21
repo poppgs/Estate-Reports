@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X Exeg2 Estate Rep Client Emails" max_length="40" name="u_imp_tmpl_x_exeg2_estate_rep_client_emails" type="collection">
+        <element attributes="import_attribute_name=CC,edge_encryption_enabled=true" label="CC" max_length="40" name="u_cc" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Email" max_length="375" name="u_email" type="string"/>
+        <element attributes="import_attribute_name=Emails,edge_encryption_enabled=true" label="Emails" max_length="275" name="u_emails" type="string"/>
+        <element attributes="import_attribute_name=Name,edge_encryption_enabled=true" label="Name" max_length="40" name="u_name" type="string"/>
+        <element attributes="import_attribute_name=Ticket,edge_encryption_enabled=true" label="Ticket" max_length="40" name="u_ticket" type="string"/>
+    </element>
+</database>

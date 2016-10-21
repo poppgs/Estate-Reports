@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Estate Report Groups" max_length="40" name="x_exeg2_estate_rep_estate_report_groups" type="collection">
+        <element attributes="import_attribute_name=appliance,edge_encryption_enabled=true" label="appliance" max_length="40" name="u_appliance" type="string"/>
+        <element attributes="import_attribute_name=company,edge_encryption_enabled=true" label="company" max_length="40" name="u_company" type="string"/>
+        <element attributes="import_attribute_name=group,edge_encryption_enabled=true" label="group" max_length="40" name="u_group" type="string"/>
+        <element attributes="import_attribute_name=Report Name,edge_encryption_enabled=true" label="Report Name" max_length="40" name="u_report_name" type="string"/>
+    </element>
+</database>

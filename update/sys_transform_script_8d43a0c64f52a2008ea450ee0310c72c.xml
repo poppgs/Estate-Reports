@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="Estate Report Group Transform">9ca2ac864f52a2008ea450ee0310c742</map>
+        <order>100</order>
+        <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+
+	// Find the appliance using the DNS_NAME
+	var gl = new GlideRecord("x_exeg2_cmdb_appliance");
+	gl.addQuery("u_dns_host_name", source.u_appliance);
+	gl.query();
+	if (gl.next()) {
+		target.appliance = gl.sys_id;
+	}
+	else
+		log.warn("Unable to find appliance: "+source.u_appliance);
+
+})(source, map, log, target);]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>gpopp</sys_created_by>
+        <sys_created_on>2016-10-07 13:58:17</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>8d43a0c64f52a2008ea450ee0310c72c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onBefore</sys_name>
+        <sys_package display_value="Estate Reports" source="x_exeg2_estate_rep">35c1467a1386e640e93cb16f3244b0b5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Estate Reports">35c1467a1386e640e93cb16f3244b0b5</sys_scope>
+        <sys_update_name>sys_transform_script_8d43a0c64f52a2008ea450ee0310c72c</sys_update_name>
+        <sys_updated_by>gpopp</sys_updated_by>
+        <sys_updated_on>2016-10-07 13:58:17</sys_updated_on>
+        <when>onBefore</when>
+    </sys_transform_script>
+</record_update>
